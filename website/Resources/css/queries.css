@@ -1,0 +1,130 @@
+
+
+/*these rules will be applied when the screen is less than or equal to 1200px (big tablets and most computer screens)*/
+@media only screen and (max-width:1200px) {
+        .hero-text-box{
+                        width:100%;
+                        padding: 0 2%;
+                    }
+            
+        .row {padding:0 2%; }
+}
+
+
+/*these rules will be applied when the screen is less than or equal to 1023px (small tablets to big ipads/tablets)*/
+@media only screen and (max-width:1023px) {
+    body{font-size:18px; } /*since all of the elements are in percentage they will all take the percentage of this font size now. */
+   
+    .section{padding: 60px 0;}
+   
+    .long-copy{
+     width:80%;
+     margin-left: 10%;
+    }
+    .steps-box{margin-top: 10px;}
+    .steps-box:last-child{ margin-top: 10px;}
+    .work-step{margin-bottom: 40px;}
+    .work-step:last-of-type{ margin-bottom: 60px;}
+    .app-screen{width:50%;}
+    .icon-small{
+        width:17px;
+        margin-right: 5px;
+    }
+    .city-feature{font-size: 90%;}
+    .plan-box{
+        width:100%;
+        margin-left: 0%;
+    }
+    .plan-price{font-size:100%;}
+    
+    .contact-form{width:80%;}
+
+}
+
+
+/*these rules will be applied when the screen is less than or equal to 767px (anything smaller than ipads)*/
+@media only screen and (max-width:767px) {
+    body{font-size:16px;}
+    section{padding: 30px 0;}
+    
+    .row,
+    .hero-text-box{padding: 0 4%;}
+    
+    .col{
+        
+        width:100%;
+        margin: 0 0 4% 0%;
+    
+    }
+    
+   .Main-nav{display:none;} /* this will make the options for the navigation hidden */
+    
+    
+    /*this will apply once width is below 767px */
+    .mobile-nav-icon{display: inline-block;}
+    
+    .Main-nav{
+        float:left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    
+    .Main-nav li{
+        display: block; /*this makes the links stack underneath each other when the screen get smaller */
+    }
+    
+    .Main-nav li a:link,
+    .Main-nav li a:visited{
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .Main-nav li a:link,
+    .sticky .Main-nav li a:visited{
+        padding:10px 0;
+    }
+    .sticky .Main-nav{
+    margin-top: 10px;
+    }
+
+    .sticky .mobile-nav-icon i{color:#555;}
+    .sticky .mobile-nav-icon i{margin-top: 10px;}
+    
+    
+    h1{font-size: 180%;}
+    h2{font-size: 150%;}
+    
+    .long-copy{
+                width:100%;
+                margin-left: 0%;
+    }
+    
+    steps-box:first-child{
+    text-align:center;/*moves the cellphone image to the center*/
+ }
+    .app-screen{width:50%;}
+    
+    .work-step{margin-bottom: 20px;}
+    .work-step:last-of-type{ margin-bottom: 20px;}
+    
+    
+    .work-step div{
+        height: 40px;
+        width:40px;/*if it is circular width should be the same as the height */
+        padding-top: 4px;
+        margin-right: 15px;
+        font-size:120%:
+}
+    
+}
+
+/*these rules will be applied when the screen is less than or equal to 480px (so like old iphone sizes)*/
+@media only screen and (max-width:480px) {
+    
+    section{padding: 25px 0;}
+    .contact-form{width:100%;}
+    
+}
+
